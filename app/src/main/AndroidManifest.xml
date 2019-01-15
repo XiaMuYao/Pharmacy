@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xiamuyao.pharmacy">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="Manifest.permission.CAMERA"/>
+    <uses-permission android:name="Manifest.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:name=".App"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:resizeableActivity="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="2.4"/>
+
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity">
+        </activity>
+        <activity android:name=".activity.YaoPinMessageActivity">
+        </activity>
+        <activity android:name=".activity.YaopinChaxun">
+        </activity>
+        <activity android:name=".activity.KuCunChaXunActivity">
+        </activity>
+        <activity android:name=".activity.KuCunMessage">
+        </activity>
+        <activity android:name=".activity.OutOrInActivity">
+        </activity>
+        <activity android:name=".activity.InOrOutInfoActivity"/>
+        <activity android:name=".activity.YaoPinInOrOutActivity">
+        </activity>
+    </application>
+
+</manifest>
